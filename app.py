@@ -88,12 +88,25 @@ except Exception as e:
 # --------------------------------------------------------------
 # Sidebar
 # --------------------------------------------------------------
+st.markdown(
+    """
+    <style>
+      /* oculta o bloco de navegação multipágina */
+      [data-testid="stSidebarNav"] { display: none !important; }
+      /* opcional: também oculta o cabeçalho com nome do app na sidebar */
+      [data-testid="stSidebarHeader"] { display: none !important; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 with st.sidebar:
     if LOGO:
         st.image(str(LOGO), use_column_width=True)
     st.header("Menu")
     st.page_link("app.py", label="Predição de Abandono de Curso", icon="📈")
     st.page_link("pages/explain.py", label="Explicação do Modelo", icon="📙")
+    st.markdown("<hr style='border:none;border-top:1px solid #ccc;'/>", unsafe_allow_html=True)
 
 # --------------------------------------------------------------
 # Cabeçalho

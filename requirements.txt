@@ -3,3 +3,6 @@ pandas>=2.0
 numpy>=1.24
 plotly==5.22.0
 catboost==1.2.7
+scikit-learn>=1.3
+pyarrow>=14.0.2     # para ler .parquet
+fastparquet>=2023.10.1  # opcional, alternativa ao pyarrow

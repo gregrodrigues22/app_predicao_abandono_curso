@@ -1,0 +1,42 @@
+{
+  "created_at": "20250921-105348",
+  "catboost_version": "1.2.8",
+  "n_selected_features": 9,
+  "selected_features": [
+    "status_formulario_inicial",
+    "matricula_ingresso_inicio_dias",
+    "aluno_profissional_profissao_descricao",
+    "hist_12m_conclusoes",
+    "hist_total_conclusoes",
+    "hist_total_abandonos",
+    "form_inicial_atual_q03_nivel_conhecimento",
+    "aluno_acesso_acesso_uf",
+    "aluno_profissional_escolaridade_descricao"
+  ],
+  "feature_order": [
+    "status_formulario_inicial",
+    "matricula_ingresso_inicio_dias",
+    "aluno_profissional_profissao_descricao",
+    "hist_12m_conclusoes",
+    "hist_total_conclusoes",
+    "hist_total_abandonos",
+    "form_inicial_atual_q03_nivel_conhecimento",
+    "aluno_acesso_acesso_uf",
+    "aluno_profissional_escolaridade_descricao"
+  ],
+  "cat_features": [
+    "aluno_profissional_escolaridade_descricao",
+    "aluno_profissional_profissao_descricao",
+    "aluno_acesso_acesso_uf",
+    "status_formulario_inicial"
+  ],
+  "params": {
+    "iterations": 500,
+    "learning_rate": 0.1,
+    "depth": 6,
+    "eval_metric": "AUC",
+    "random_seed": 42,
+    "verbose": false,
+    "use_best_model": true
+  }
+}
